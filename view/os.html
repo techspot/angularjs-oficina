@@ -1,0 +1,17 @@
+<a href="#/os/new" class="btn btn-primary">Cadastrar</a>
+<table class="table table-striped>tbody>tr">
+	<tr>
+		<th>Cliente</th>
+		<th>Data</th>
+		<th>Valor</th>
+		<th>Status</th>
+	</tr>
+	
+	<tr ng-repeat="os in osCollection | filter: qSearch">
+		<td>{{os.customer_name}}</td>
+		<td>{{os.date}}</td>
+		<td>{{os.total}}</td>
+		<td>{{os.status}}</td>
+	</tr>
+</table>			
+

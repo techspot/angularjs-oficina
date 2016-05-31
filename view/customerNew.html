@@ -1,0 +1,44 @@
+<h2>Cadastrar novo Cliente</h2>
+
+<form>
+	<div class="form-group">
+		<label for="customer_name">Nome</label>
+		<input type="text" class="form-control" id="customer_name" placeholder="Nome" ng-model="customer_name">
+	</div>
+	<div class="form-group">
+		<label for="email">E-mail</label>
+		<input type="email" class="form-control" id="email" placeholder="E-mail" ng-model="email">
+	</div>
+	<div class="form-group">
+		<label for="phone1">Telefone</label>
+		<input type="text" class="form-control" id="phone1" placeholder="Telefone" ng-model="phone1">
+	</div>
+	<div class="form-group">
+		<label for="cellphone">Celular</label>
+		<input type="text" class="form-control" id="cellphone" placeholder="Celular" ng-model="cellphone">
+	</div>
+	<div class="form-group">
+		<label for="birthday">Aniversário</label>
+		<input type="text" class="form-control" id="birthday" placeholder="dd/AAAA" ng-model="birthday">
+	</div>
+	<div class="form-group">
+		<label for="address_street">Endereço</label>
+		<input type="text" class="form-control" id="address_street" placeholder="Rua, n100" ng-model="address_street">
+	</div>
+	<div class="form-group">
+		<label for="address_neighborhood">Bairro</label>
+		<input type="text" class="form-control" id="address_neighborhood" placeholder="Bairro" ng-model="address_neighborhood">
+	</div>
+	<div class="form-group">
+		<label for="address_city">Cidade</label>
+		<input type="text" class="form-control" id="address_city" placeholder="Cidade" ng-model="address_city">
+	</div>
+	<div class="form-group">
+		<label for="address_state">Estado</label>
+		<input type="text" class="form-control" id="address_state" placeholder="" ng-model="address_state">
+	</div>	
+	
+	{{customer_name}}
+	{{email}}
+	<button type="submit" class="btn btn-default">Salvar</button>
+</form>

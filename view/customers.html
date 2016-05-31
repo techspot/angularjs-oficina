@@ -1,0 +1,20 @@
+<a href="#/customer/new" class="btn btn-primary">Cadastrar</a>
+
+<table class="table table-striped>tbody>tr">
+	<tr>
+		<th></th>
+		<th>Cliente</th>
+		<th>E-mail</th>
+		<th>Telefone</th>
+		<th>Celular</th>
+	</tr>
+	
+	<tr ng-repeat="customer in customersCollection | filter: qSearch">
+		<td><input type="checkbox"></td>
+		<td>{{customer.customer_name}}</td>
+		<td>{{customer.email}}</td>
+		<td>{{customer.phone1}}</td>
+		<td>{{customer.cellphone}}</td>
+	</tr>
+</table>			
+

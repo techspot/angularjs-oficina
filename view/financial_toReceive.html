@@ -1,0 +1,19 @@
+<h2>Contas a Receber</h2>
+<a href="#/customer/new" class="btn btn-primary">Cadastrar</a>
+
+<table class="table table-striped>tbody>tr">
+	<tr>
+		<th>Conta</th>
+		<th>Vencimento</th>
+		<th>Valor a Receber</th>
+		<th>Status</th>
+	</tr>
+	
+	<tr ng-repeat="conta in financialCollection | filter: qSearch">
+		<td>{{conta.title}}</td>
+		<td>{{conta.maturity_date}}</td>
+		<td>{{conta.total}}</td>
+		<td>{{conta.status}}</td>
+	</tr>
+</table>			
+

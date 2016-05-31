@@ -1,0 +1,16 @@
+<table class="table table-striped>tbody>tr">
+	<tr>
+		<th>Fornecedor</th>
+		<th>E-mail</th>
+		<th>Telefone</th>
+		<th>Celular</th>
+	</tr>
+	
+	<tr ng-repeat="provider in providersCollection | filter: qSearch">
+		<td>{{provider.provider_name}}</td>
+		<td>{{provider.email}}</td>
+		<td>{{provider.phone1}}</td>
+		<td>{{provider.cellphone}}</td>
+	</tr>
+</table>			
+
